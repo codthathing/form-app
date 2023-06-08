@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        font-style: italic;
+    }
+
+    button {
+        background-color: white;
+        color: black;
+        border-radius: 0.2rem;
+    }
+
+    @media all and (max-width: 767px) {
+
+        body {
+            padding: 0.5rem;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin: 1.5rem 0 1rem 0;
+        }
+
+        p {
+            margin: 1rem 0;
+            font-size: 1.2rem;
+        }
+
+        button {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+        }  
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+
+        body {
+            padding: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 3rem 0 2rem 0;
+        }
+
+        p {
+            margin: 2.5rem 0;
+            font-size: 2rem;
+        }
+        
+        button {
+            font-size: 2rem;
+            margin: 1.5rem 0;
+            padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+        }
+    }
+
+    @media all and (min-width: 1024px) {
+
+        #body {
+            padding: 1rem;
+            position: absolute;
+            width: 50%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        h1 {
+            font-size: 1.5rem;
+            margin: 1.5rem 0 1rem 0;
+        }
+        
+        p {
+            margin: 1rem 0;
+            font-size: 1.2rem;
+        }
+     
+        button {
+          font-size: 1.2rem;
+          margin: 1rem 0;
+          padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+        }
+    }
+</style>
+<script>
+    function retBack() {
+        window.history.back()
+    }
+</script>
+<body>
+    
+    <div id="body">
+        <h1>Your details submitted has:</h1>
+        <div>
+            <p>Name: <span id="name"></span></p>
+            <p>Email: <span id="email"></span></p>
+            <p>Job: <span id="job"></span></p>
+            <p>Phone-No: <span id="phone"></span></p>
+            <p>File: <span id="file"></span></p>
+        </div>
+        <button onclick="retBack()">OK</button>
+    </div>
+    
+    <script type="text/javascript" src="result.js"></script>
+</body>
+</html>
